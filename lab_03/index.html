@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            background-color: #543434;
+            display: block;
+            margin: 0 auto;
+        }
+        #controls {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="firework" width="500" height="500"></canvas>
+    <div id ="controls">
+        <label for="gravity">Grawitacja</label>
+        <input type="range" id="gravity" min="0" max="1" step="0.01" value="0.1">
+        <input type="range" id="particleCount" min="10" max="100" step="1" value="50">
+        <label for="particleCount">Liczba cząstek</label>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
